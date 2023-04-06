@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "LogService": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "httpPort": 9005,
+      "sslPort": 9006,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:9006;http://localhost:9005"
+    }
+  }
+}

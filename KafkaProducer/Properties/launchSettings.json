@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "KafkaProducer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger/index.html",
+      "httpPort": 9003,
+      "sslPort": 9004,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:9004;http://localhost:9003"
+    }
+  }
+}
