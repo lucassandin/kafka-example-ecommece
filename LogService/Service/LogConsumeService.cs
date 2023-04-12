@@ -4,13 +4,13 @@ using KafkaConsumer.Service;
 
 namespace LogService.Service
 {
-    public class LogConsumeService : IHostedService
+    public class LogConsumeService : ILogConsumeService, IHostedService
     {
         private readonly IEnumerable<string> TOPICS = new List<string> { "ecommerce_new_order", "ecommerce_send_email" };
         private readonly IDictionary<string, string> configs = new Dictionary<string, string>
         {
             { KafkaConst.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092" },
-            { KafkaConst.AUTO_OFFSET_RESET_CONFIG, "Earliest" },
+            { KafkaConst.AUTO_OFFSET_RESET_CONFIG, "earliest" },
             { KafkaConst.GROUP_ID_CONFIG, "log_consumer" },
         };
 
